@@ -85,3 +85,13 @@ and Lieutenants” workflow instead of the “Centralized” workflow?
   large team of 100, the D&L workflow would be more ideal since there are
   certain people delegated to making sure conflicts in code do not happen.
 */
+
+5.)
+Is the RoleGame prototype using polymorphism and/or encapsulation? If you find that the
+prototype is using any of these two OOP principles, please discuss in which way the
+prototype is using it.
+/*
+The RoleGame prototype uses encapsulation, but not polymorphism. Every function
+has a unique name. Encapsulation is used when the info for every weapon inherited
+by the Weapon class is stored in the constructor and .cpp functions.
+*/
