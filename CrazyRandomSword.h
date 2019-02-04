@@ -16,4 +16,19 @@ hitpoints = random integer number between 7 and
 the armor the weapon hits.
 */
 
+class CrazyRandomSword : public Weapon {
+public:
+
+    CrazyRandomSword() : Weapon("CrazyRandomSword", rand()%100+7) //Calls Weapon(name, hitpoints) constructor with values Common Sword and 50.0
+    {
+      srand((unsigned int)time(NULL)); //seed for random number is NULL so the seed is always changing
+      hitPoints = rand()%100+7;
+    }
+
+    virtual ~CommonSword() {};
+
+    virtual double hit(double armor);
+
+};
+
  #endif /* CRAZYRANDOMSWORD_H */
