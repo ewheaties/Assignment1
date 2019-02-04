@@ -1,0 +1,87 @@
+
+(a) Paste the console output you saved at the end of step 3.C
+/*
+Counting objects: 10, done.
+Delta compression using up to 56 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 979 bytes | 0 bytes/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/ewheaties/Assignment1.git
+   3d373c9..c73e899  master -> master
+*/
+(b) How many commits have been done to the repository (not only by you, but by
+anyone) so far? Write the git command you used to get this information
+/*
+  There were 5 commits total, two made by Javier, the owner of the remote repo
+  and the following 3 commits made by me, which can be seen using 'git log'
+*/
+(c) When was the .gitignore file modified last? Write the git command you used
+to get this information
+/*
+  The .gitignore file was last edited 18 days ago, which can be seen be calling
+  'git log .gitignore'. The string containing the date is shown below
+
+  'Date:   Thu Jan 10 16:45:38 2019 -0500'
+*/
+(d) Mention two reasons why branches are used in a Git repository
+/*
+ 1.) Branching is used to 'branch' the main code from new code so the new code
+     can be tested without affecting the original
+ 2.) Branching is used to collaborate with team members and allows for
+     between local and public work that can be further abstracted or
+     merged later
+*/
+(e) What is the difference between git log and git status?
+/*
+# git status shows files changes since the last commit
+  i.e. what will show up in next commit
+# git log shows a record of all past commits with their notes
+*/
+(f) What command would you use to see the commits where “Weapon.h” was one
+of the committed files? (4 points)
+/*
+  'git log Weapon.h'
+*/
+(g) What command would you use to see the commits whose commit message
+contains the word “file”?
+/*
+  'git log --grep=file'
+*/
+(h) In the context of object-oriented programming (I) What is inheritance? (II)
+What is polymorphism? (III) What is encapsulation?
+/*
+  (I) Inheritance allows for new classes/objects to have same properties of
+  and existing class. ex. Suppose we have a class Car() and a class Vehicle().
+  It would make sense for Car() to inherit properties from class Vehicle(),
+  so each Car object created will have variables, functions, etc. from
+  Vehicle class
+  (II) Polymorphism is when different versions of a function with the same name
+  exist but different parameters. The data type of the variables passed into
+  the function will determine which version of the function will run.
+  (III) Encapsulation is storing functions, variables, data, and other
+  information in a class.
+*/
+(i) What is the main difference between the “Dictator and Lieutenants” workflow
+and the “Integration management” workflow”?
+/*
+# "Dictator and Lieutenants" workflow - Any new code that is presented goes
+  through direct approval from the 'leitenants' and then the 'dictators' before
+  it is published in one central repository.
+# "Integration Management" workflow - Developers push their code to a separate
+  public repositories, and the integration manager is responsible for
+  merging changes in the main repository.
+
+  The difference is the Integration Management approach doesn't need direct
+  approval for new code to be uploaded to a developer public repo, while the
+  D&L approach has strict management over new code before it is merged with the
+  main repo.
+*/
+(j) Why a team of 100 developers would benefit more by following the “Dictator
+and Lieutenants” workflow instead of the “Centralized” workflow?
+/*
+  The "Centralized workflow" gives freedom to individual developers to control
+  the process of merging old code with new code without conflicts, so with a
+  large team of 100, the D&L workflow would be more ideal since there are
+  certain people delegated to making sure conflicts in code do not happen.
+*/
