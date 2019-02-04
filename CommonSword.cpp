@@ -1,7 +1,7 @@
-/* 
+/*
  * File:   CommonSword.cpp
  * Author: Javier <jrescobara@gmail.com>
- *  
+ *
  */
 
 #include "CommonSword.h"
@@ -13,4 +13,3 @@ double CommonSword::hit(double armor){
         return 0;
     }
     return damage;
-}
