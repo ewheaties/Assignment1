@@ -9,7 +9,7 @@
  //will ignore all the armor points
 
  #include "SimpleHammer.h"
- double CommonSword::hit(double armor){
+ double SimpleHammer::hit(double armor){
      double damage;
 
      if(armor < 30) // if armor is less than 30, ignore hitpoints
@@ -18,7 +18,7 @@
      if(damage < 0) //if damage is an invalid input
        damage = 0;
 
-     else //default behavior of weapon 
+     else //default behavior of weapon
        damage = hitPoints - armor;
 
      return damage;

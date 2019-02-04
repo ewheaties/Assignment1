@@ -25,7 +25,7 @@ public:
       hitPoints = rand()%100+7;
     }
 
-    virtual ~CommonSword() {};
+    virtual ~CrazyRandomSword() {};
 
     virtual double hit(double armor);
 
